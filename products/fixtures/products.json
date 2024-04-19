@@ -1,0 +1,36 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "name": "Louis Latour Macon-Lugny",
+        "description": "Weâ€™ve sold this wine for thirty years â€“ and for that whole time itâ€™s been a bestseller. Whyâ€™s it so popular? White Burgundy is a go-to for Chardonnay drinkers, and the Maconnais in particular offers great value. Unlike the northern Cotes, the southern part of Burgundy doesnâ€™t have a formalised vineyard hierarchy system. So the wines tend to be a bit more wallet-friendly. Not to mention, Lugny is one of the best regarded villages in the Macon, and Latour one of the most famous houses. Honeyed. Peachy. Crisp. A dream with salty finger foods or a classic Sunday roast chicken. Itâ€™s proof that sometimes it pays to stick with the old favourites.",
+        "price": 19.99,
+        "size": "750ml",
+        "grape": "Chardonnay",
+        "country": "France",
+        "region": "Burgundy",
+        "category": 2,
+        "image_url": "",
+        "image": "",
+        "vintage": 2022
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "name": "Two Hands 'Angels' Share' Shiraz",
+        "description": "Two Hands successfully prove that not all Aussie Shiraz is equal. Founded in the 1990s, their mission was to break the mould and showcase the diversity of this iconic grape. Theyâ€™ve more than succeeded â€“ and theyâ€™re now regarded as Shiraz experts. â€˜Angels' Shareâ€™ was one of their very first wines. Its name refers to the small amount of wine that evaporates from oak barrels during maturation, which mediaeval winemakers believed angels took as they watched over their wines. Itâ€™s brilliantly bold and flavoursome â€“ a full-on Australian Shiraz, with a silky texture and smooth tannins. Flavours of blueberry, dried herbs and a hint of game are ideal for barbecued meats.",
+        "price": 21.99,
+        "size": "750ml",
+        "grape": "Shiraz",
+        "country": "Australia",
+        "region": "McLaren Vale",
+        "category": 1,
+        "image_url": "",
+        "image": "",
+        "vintage": 2022
+      }
+    }
+  ]
