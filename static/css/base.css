@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Montserrat';
+    padding-top: 100px;
 }
 
 #header {
@@ -62,8 +63,8 @@ body {
     color: #000 !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.banner-border {
+    background-color: #e3c69f;
 }
 
 /* -------------------------------- Media Queries */
