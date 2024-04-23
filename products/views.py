@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Product
 
 def all_wines(request):
@@ -11,3 +11,14 @@ def all_wines(request):
     }
 
     return render(request, 'products/wines.html', context)
+
+def wine_detail(request, product_id):
+    """A view to show product details """
+
+    wine = get_object_or_404(Product, pk=product_id)
+
+    context = {
+        'wine': wine,
+    }
+
+    return render(request, 'products/wine_detail.html', context)

@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 
-body {
+.homepage-body {
     background: url('/static/wine-background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
@@ -11,6 +11,12 @@ body {
     padding-top: 100px;
 }
 
+body {
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Montserrat';
+    padding-top: 100px;
+}
 #header {
     position:absolute;
     background-color: #fafafa;
@@ -65,6 +71,16 @@ body {
 
 .banner-border {
     background-color: #e3c69f;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
