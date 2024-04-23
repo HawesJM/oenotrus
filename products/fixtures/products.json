@@ -4,7 +4,7 @@
       "model": "products.product",
       "fields": {
         "name": "Louis Latour Macon-Lugny",
-        "description": "Weâ€™ve sold this wine for thirty years â€“ and for that whole time itâ€™s been a bestseller. Whyâ€™s it so popular? White Burgundy is a go-to for Chardonnay drinkers, and the Maconnais in particular offers great value. Unlike the northern Cotes, the southern part of Burgundy doesnâ€™t have a formalised vineyard hierarchy system. So the wines tend to be a bit more wallet-friendly. Not to mention, Lugny is one of the best regarded villages in the Macon, and Latour one of the most famous houses. Honeyed. Peachy. Crisp. A dream with salty finger foods or a classic Sunday roast chicken. Itâ€™s proof that sometimes it pays to stick with the old favourites.",
+        "description": "We've sold this wine for thirty years, and for that whole time it's been a bestseller. Why's it so popular? White Burgundy is a go-to for Chardonnay drinkers, and the Maconnais in particular offers great value. Unlike the northern Cotes, the southern part of Burgundy doesnâ€™t have a formalised vineyard hierarchy system. So the wines tend to be a bit more wallet-friendly. Not to mention, Lugny is one of the best regarded villages in the Macon, and Latour one of the most famous houses. Honeyed. Peachy. Crisp. A dream with salty finger foods or a classic Sunday roast chicken. Itâ€™s proof that sometimes it pays to stick with the old favourites.",
         "price": 19.99,
         "size": "750ml",
         "grape": "Chardonnay",
@@ -12,7 +12,7 @@
         "region": "Burgundy",
         "category": 2,
         "image_url": "",
-        "image": "",
+        "image": "louis-latour-macon-lugny.png",
         "vintage": 2022
       }
     },
@@ -29,7 +29,7 @@
         "region": "McLaren Vale",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "two-hands-angel-share.png",
         "vintage": 2022
       }
     },
@@ -46,7 +46,7 @@
         "region": "Champagne",
         "category": 3,
         "image_url": "",
-        "image": "",
+        "image": "louis-roederer-cristal.png",
         "vintage": 2015  
       }
     },
@@ -63,7 +63,7 @@
         "region": "Rioja",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "marques-riscal-reserva.png",
         "vintage": 2018  
       }
     },
@@ -80,7 +80,7 @@
         "region": "Rhone",
         "category": 2,
         "image_url": "",
-        "image": "",
+        "image": "white-wine-stock.png",
         "vintage": 2022  
       }
     },
@@ -97,7 +97,7 @@
         "region": "Barossa",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "peter-lehmann-barossan.png",
         "vintage": 2019  
       }
     },
@@ -114,7 +114,7 @@
         "region": "Rhone",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "red-wine-stock.png",
         "vintage": 2022  
       }
     },
@@ -131,7 +131,7 @@
         "region": "Rhone",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "alain-jaume-roquedon-lirac.png",
         "vintage": 2018  
       }
     },
@@ -148,7 +148,7 @@
         "region": "Rhone",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "guigal-cotes-rouge.png",
         "vintage": 2020  
       }
     },
@@ -165,7 +165,7 @@
         "region": "Rhone",
         "category": 2,
         "image_url": "",
-        "image": "",
+        "image": "white-wine-stock.png",
         "vintage": 2022  
       }
     },
@@ -182,7 +182,7 @@
         "region": "Veneto",
         "category": 2,
         "image_url": "",
-        "image": "",
+        "image": "inama-soave-classico.png",
         "vintage": 2021  
       }
     },
@@ -199,7 +199,7 @@
         "region": "Campania",
         "category": 2,
         "image_url": "",
-        "image": "",
+        "image": "feudi-greco.png",
         "vintage": 2021  
       }
     },
@@ -216,7 +216,7 @@
         "region": "Rhone",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "red-wine-stock.png",
         "vintage": 2020  
       }
     },
@@ -233,7 +233,7 @@
         "region": "Rhone",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "remy-ferbas-gigondas.png",
         "vintage": 2020  
       }
     },
@@ -250,7 +250,7 @@
         "region": "Central Otago",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "roaring-meg.png",
         "vintage": 2019  
       }
     },
@@ -267,7 +267,7 @@
         "region": "Stellenbosch",
         "category": 2,
         "image_url": "",
-        "image": "",
+        "image": "de-morgenzon-chenin-blanc.png",
         "vintage": 2023  
       }
     },

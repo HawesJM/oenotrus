@@ -26,7 +26,7 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if wine.image %}
-                                <a href="{% url 'wine_detail' wine.name %}">
+                                <a href="{% url 'wine_detail' wine.id %}">
                                     <img class="card-img-top img-fluid" src="{{ wine.image.url }}" alt="{{ wine.name }}">
                                 </a>
                                 {% else %}
