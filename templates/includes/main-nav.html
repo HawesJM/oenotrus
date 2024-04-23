@@ -13,15 +13,14 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wine-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories  
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Red Wines</a>
-                <a href="" class="dropdown-item">White Wines</a>
-                <a href="" class="dropdown-item">Sparkling Wines</a>
+            <div class="dropdown-menu border-0" aria-labelledby="wine-link">
+                <a href="{% url 'wines' %}?category=red_wine" class="dropdown-item">Red Wines</a>
+                <a href="{% url 'wines' %}?category=white_wine" class="dropdown-item">White Wines</a>
+                <a href="{% url 'wines' %}?category=champagne_sparkling" class="dropdown-item">Sparkling & Champagne</a>
                 <a href="" class="dropdown-item">Sweet & Fortified Wines</a>
-                <a href="" class="dropdown-item">All Wines</a>
             </div>
         </li>
 
