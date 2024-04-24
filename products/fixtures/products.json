@@ -284,7 +284,7 @@
         "region": "Pfalz",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "ernst-loosen-pfalz.png",
         "vintage": 2022  
       }
     },
@@ -301,7 +301,7 @@
         "region": "Beaujolais",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "georges-duboeuf-fleurie.png",
         "vintage": 2021  
       }
     },
@@ -318,7 +318,7 @@
         "region": "Rhone",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "alain-jaume-garrigue-vacqueyras.png",
         "vintage": 2019  
       }
     },
@@ -335,7 +335,7 @@
         "region": "Pfalz",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "friedrich-becker-pinot-noir.png",
         "vintage": 2019  
       }
     },
@@ -352,7 +352,7 @@
         "region": "Rioja",
         "category": 1,
         "image_url": "",
-        "image": "",
+        "image": "beronia-rioja-reserva.png",
         "vintage": 2018  
       }
     }

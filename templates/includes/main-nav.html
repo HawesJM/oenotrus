@@ -5,9 +5,9 @@
                 All Wines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Region</a>
+                <a href="{% url 'wines' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'wines' %}?sort=region&direction=asc" class="dropdown-item ">By Region</a>
+                <a href="{% url 'wines' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'wines' %}" class="dropdown-item">All Wines</a>
             </div>
         </li>

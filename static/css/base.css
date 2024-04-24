@@ -80,6 +80,11 @@ body {
 hr {
     margin: auto !important;
 }
+
+a.category-badge > span.badge:hover {
+    background: #530d17 !important;
+    color: #fff !important;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
