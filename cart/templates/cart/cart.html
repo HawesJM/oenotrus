@@ -24,7 +24,38 @@
             <div class="col">
                 {% if cart_items %}
                     <div class="table-responsive rounded">
-                        {{ cart_items }}
+                        <table class="table table-sm table-borderless">
+                            <thead class="text-black">
+                                <tr>
+                                    <th scope="col">Wine Detail</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Bottles</th>
+                                    <th scope="col">Subtotal</th>
+                                </tr>
+                            </thead>
+                            {% for item in cart_items %}
+                                <tr>
+                                    <td class="p-3 w-25">
+                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                    </td>
+                                    <td class = "py-3">
+                                        <p class="my-0"><strong>{{ item.product.vintage }}</strong></p>
+                                        <p class="my-0"><strong><em>{{ item.product.name }}, {{ item.product.size }}</em></strong></p>
+                                        <p class="my-0">{{ item.product.country }}, {{ item.product.region }}</p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">£{{ item.product.price }}</p>
+                                    </td>
+                                    <td class="py-3 w-25">
+                                        <p class="my-0">{{ item.quantity }}</p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">£{{ item.product.price }}</p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your cart is empty.</p>
