@@ -3,7 +3,7 @@
 
     // Disable add or minus qty buttons outside range
     function handleEnableDisable(itemId) {
-        var currentValue = parseInt(£(`#id_qty_${itemId}`).val());
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
