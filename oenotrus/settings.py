@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     'home',
     'products',
     'cart',
-    'checkout'
+    'checkout',
+    'crispy_forms'
+
 ]
 
 MIDDLEWARE = [
@@ -88,6 +90,8 @@ LOGIN_REDIRECT_URL = '/'
 
 ROOT_URLCONF = 'oenotrus.urls'
 
+CRISPY_TEMPLATE_PACK= 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -104,6 +108,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
