@@ -20,7 +20,7 @@
                 <a href="{% url 'wines' %}?category=red_wine" class="dropdown-item">Red Wines</a>
                 <a href="{% url 'wines' %}?category=white_wine" class="dropdown-item">White Wines</a>
                 <a href="{% url 'wines' %}?category=champagne_sparkling" class="dropdown-item">Sparkling & Champagne</a>
-                <a href="" class="dropdown-item">Sweet & Fortified Wines</a>
+                <a href="{% url 'wines' %}?category=rose_wine" class="dropdown-item">Rosé Wines</a>
             </div>
         </li>
 
@@ -30,9 +30,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
                 <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="" class="dropdown-item">Personal Picks</a>
+                <a href="" class="dropdown-item">Most Popular</a>
             </div>
         </li>
     </ul>

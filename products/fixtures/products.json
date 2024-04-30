@@ -355,6 +355,124 @@
         "image": "beronia-rioja-reserva.png",
         "vintage": 2018  
       }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "name": "Miraval Rosé",
+        "description": "Miraval shot to fame when Angelina Jolie and Brad Pitt bought it. But its real brilliance lies with its winemakers: the prestigious Perrin family. This prestigious family are one of the most respected in the Rhone Valley. And the expertise really shines in this Provence rose. This is a beautifully pale-pink rose, with notes of wild strawberry, stone fruit, tangerine and white flowers. Try it with white fish and fennel.",
+        "price": 22.99,
+        "size": "750ml",
+        "grape": "Cinsault",
+        "country": "France",
+        "region": "Provence",
+        "category": 4,
+        "image_url": "",
+        "image": "miraval-provence-rose.png",
+        "vintage": 2022 
+      }
+    },
+    {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "name": "Gerard Bertrand 'Cote des Roses",
+      "description": "Gerard Bertrand was once a famous rugby player. Heâ€™s now one of Southern Franceâ€™s most acclaimed winemakers. His wines regularly scoop top marks from the critics, and the Cote des Roses is a real classic. From warm and windy vineyards on the French coast, the ripe fruit flavours are balanced by a delicious freshness from the sea breezes. It comes in a beautifully sculpted bottle, designed to look like a rose, making it a great gift or celebration centrepiece. Expect bright flavours of summer fruits, cassis, redcurrant, roses and grapefruit. Itâ€™ll be fantastic with baked white fish and fresh seasonal salads. In 2022, this wine won an IWC award for the 2021 vintage.",
+      "price": 13.99,
+      "size": "750ml",
+      "grape": "Grenache",
+      "country": "France",
+      "region": "Languedoc",
+      "category": 4,
+      "image_url": "",
+      "image": "bertrand-cote-roses.png",
+      "vintage": 2022  
     }
-
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "name": "Tutiac 'Lion & The Lily' ",
+      "description": "Thereâ€™s more to Bordeaux than claret. If you like refreshing, fruity and aromatic rose, it pays to try something different here. This is made purely from Merlot grapes with a unique approach by the biggest rose producer in the region. It really sets the bar for Bordeaux pink. Itâ€™s light and fruity, with notes of red fruits, a long, aromatic finish and a fresh minerality. Try this with a chicken Caesar salad at your next picnic.",
+      "price": 14.99,
+      "size": "750ml",
+      "grape": "Merlot",
+      "country": "France",
+      "region": "Bordeaux",
+      "category": 4,
+      "image_url": "",
+      "image": "tutiac-lion-lily.png",
+      "vintage": 2022  
+    } 
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "name": "Pasqua '11 Minutes'",
+      "description": "This complex Italian rose first hit our shelves in small, limited supply. Our customers loved it so much, we soon went back for more. Itâ€™s made by Pasqua, a historic family-run winery who are behind some of our best-selling bottles. So you can be sure youâ€™re in for something delicious. Itâ€™s made from Corvina, Trebbiano, Syrah and Carmenere grapes, which all thrive in Pasquaâ€™s beautiful Veneto-based vineyards. Its name comes from the length of time the juice is left on the grape skins â€“ exactly 11 minutes, the perfect amount of time to give the wine its delicate rosy colour. It's elegant and subtly spicy, with plenty of red-fruit flavours. Transport yourself to Italy by pairing it with baked white fish, olives and tomatoes.",
+      "price": 15.99,
+      "size": "750ml",
+      "grape": "Corvina",
+      "country": "Italy",
+      "region": "Veneto",
+      "category": 4,
+      "image_url": "",
+      "image": "pasqua-11-minutes.png",
+      "vintage": 2022  
+    } 
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "name": "Heidsieck & Co. Monopole 'Gold Top'",
+      "description": "Heidsieck & Co. are one of only 24 Grand Marque Champagne houses. You can always rely on these highly esteemed houses for quality, but Heidsieck stands out for combining quality with incredible value. Gold Top is their most decadent cuvee. The wine is aged for up to a decade before it's released, so such a lengthy process results in seriously luxurious bubbles. The long ageing means the rich, toasty, creamy flavours are dialled right up. Itâ€™s aromatic and citrusy, with a lush texture and a lingering finish.",
+      "price": 33.99,
+      "size": "750ml",
+      "grape": "Chardonnay",
+      "country": "France",
+      "region": "Champagne",
+      "category": 3,
+      "image_url": "",
+      "image": "heidsieck-gold-top.png",
+      "vintage": 2018  
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "name": "Laurent-Perrier Millesime",
+      "description": "Laurent-Perrier has a rich history dating back to 1812. The houseâ€™s reputation for fine quality has made them one of the most admired Champagne brands in the world. Their vintage Champagne is only made in exceptional years. The Chardonnay-Pinot Noir blend is made from at least thirteen top rated Grand Crus plots. Aged for a minimum of six years, the result is a complex and elegant wine. Expect citrus and floral aromas, plus notes of white peach, grapefruit and almond. Decanter's Simon Field MW awarded the 2012 vintage 91 points, calling it ''a wonderfully poised blend'",
+      "price": 69.99,
+      "size": "750ml",
+      "grape": "Chardonnay",
+      "country": "France",
+      "region": "Champagne",
+      "category": 3,
+      "image_url": "",
+      "image": "laurent-perrier-millesime.png",
+      "vintage": 2012  
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "name": "Chanoine Freres 'Reserve Privee' Brut",
+      "description": "Chanoine Freres was founded in 1730 and is the second-oldest Champagne house. It's developed its signature style over almost three centuries since, and the expertise certainly shows in this vintage Champagne. It has fine, delicate bubbles and rich flavours of candied fruit, roasted hazelnuts and honey",
+      "price": 49.99,
+      "size": "750ml",
+      "grape": "Chardonnay",
+      "country": "France",
+      "region": "Champagne",
+      "category": 3,
+      "image_url": "",
+      "image": "chanoine-freres-reserve.png",
+      "vintage": 2018  
+    }
+  }
   ]

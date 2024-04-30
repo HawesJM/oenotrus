@@ -113,6 +113,9 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+i {
+    text-decoration: none !important;
+}
 /* ------------------------------- bootstrap toasts */
 
 
@@ -142,6 +145,11 @@ a.category-badge > span.badge:hover {
     top: -10px;
     right: 36px;
 }
+
+#warning-toast {
+    background-color: #e3c69f !important;
+}
+
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
@@ -181,7 +189,6 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 
 /* -------------------------------- Media Queries */
 
