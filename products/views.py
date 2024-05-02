@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from .forms import WineForm
 
 def all_wines(request):
     """A view to show all wines and allow sorting and searching """
@@ -64,3 +65,54 @@ def wine_detail(request, product_id):
     }
 
     return render(request, 'products/wine_detail.html', context)
+
+
+def add_wine(request):
+    """ Add a wine to the store """
+    if request.method == 'POST':
+        form = WineForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added wine!')
+            return redirect(reverse('add_wine'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = WineForm()
+        
+    template = 'products/add_wine.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+def edit_wine(request, product_id):
+    """ Edit a wine in the store """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = WineForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'wine successfully updated!')
+            return redirect(reverse('wine_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update wine. Please ensure the form is valid.')
+    else:
+        form = WineForm(instance=product)
+        messages.info(request, f'You are editing {product.name}')
+
+    template = 'products/edit_wine.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+def delete_wine(request, product_id):
+    """ Delete a product from the store """
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'wine deleted!')
+    return redirect(reverse('wines'))
