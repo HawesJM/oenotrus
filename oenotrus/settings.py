@@ -29,9 +29,9 @@ SECRET_KEY = 'django-insecure-m-o-*!cxx%vg37r&oqc&zyvi$lz+mm8!-dngf%dc^enjrjh$z0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['8000-hawesjm-oenotrus-t4gvkijgira.ws-eu112.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu112.gitpod.io']
 
 
 # Application definition
@@ -131,6 +131,16 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+
 WSGI_APPLICATION = 'oenotrus.wsgi.application'
 
 
@@ -200,18 +210,9 @@ STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL =  'sales@oenotrus.com'
 
-if 'DEVELOPMENT' is os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL =  'sales@oenotrus.com'
-else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_USE_TLS = True
-    EMAIL_PORT = 587
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
 
 LazyChoicesMixin.get_choices = lambda self: self._choices
 LazyChoicesMixin.choices = property(LazyChoicesMixin.get_choices, LazyChoicesMixin.set_choices)
