@@ -31,9 +31,9 @@ SECRET_KEY = 'django-insecure-m-o-*!cxx%vg37r&oqc&zyvi$lz+mm8!-dngf%dc^enjrjh$z0
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['oenotrus', '8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['oenotrus-b46392d15346.herokuapp.com', '8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://oenotrus-b46392d15346.herokuapp.com', 'https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
 
 
 # Application definition
