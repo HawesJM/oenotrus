@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-m-o-*!cxx%vg37r&oqc&zyvi$lz+mm8!-dngf%dc^enjrjh$z0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['oenotrus', 'localhost']
+
+ALLOWED_HOSTS = ['oenotrus', '8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
 
