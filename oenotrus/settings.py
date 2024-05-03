@@ -212,7 +212,7 @@ STANDARD_DELIVERY_PERCENTAGE = 20
 
 if 'USE_AWS' in os.environ:
 
-     AWS_S3_OBJECT_PARAMETERS = {
+    AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
