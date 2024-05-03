@@ -31,9 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['oenotrus-b46392d15346.herokuapp.com', '8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
+ALLOWED_HOSTS = ['oenotrus-b46392d15346.herokuapp.com', '8000-hawesjm-oenotrus-t4gvkijgira.ws-eu111.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://oenotrus-b46392d15346.herokuapp.com', 'https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu110.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://oenotrus-b46392d15346.herokuapp.com', 'https://8000-hawesjm-oenotrus-t4gvkijgira.ws-eu111.gitpod.io']
 
 
 # Application definition
@@ -234,7 +234,7 @@ DEFAULT_FROM_EMAIL =  'sales@oenotrus.com'
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'sales@oenotrus.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
