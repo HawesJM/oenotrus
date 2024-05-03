@@ -1,4 +1,8 @@
 from django.db import models
+from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
+from django.contrib.auth.models import User
 
 class Category(models.Model):
 
@@ -29,3 +33,4 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
