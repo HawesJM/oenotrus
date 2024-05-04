@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Reviews
 from .forms import WineForm
 
 def all_wines(request):
@@ -144,7 +144,7 @@ def submit_review(request, product_id):
                 request,
                 'Please provide star rating before submitting your review.'
             )
-            return redirect(reverse('product_detail', args=[product_id]))
+            return redirect(reverse('wine_detail', args=[product_id]))
 
         if review:
             review.rating = rating

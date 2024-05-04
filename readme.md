@@ -46,15 +46,124 @@ For returning customers I want them to be able to review their purchases in such
 
 ###### UX Design Principles
 
+![alt text](static/oenotrus-ux-principles.png)
 
+###### User Stories
 
+![alt text](static/oenotrus-user-stories.png)
 
+##### Navigation
 
+The full stack application consists of a landing homepage with a hero background image with top navigation, a footer, and a simple and clear call to action taking the user to the full wine list. The navigation dropdown allows the user to view all wines, but also to browse by specific category, and also to navigate to specials based on extra criteria.
 
+The main wines page is sortable and allows the user to filter by relevant criteria, or perform a specific search. Product images along with key information is displayed and each product contains a link to a full detail page for the wine in question.
 
+From their users can add to cart if they are customers or shoppers, or if they are admin users they can edit/delete products from this detail page. The cart page contains the product image, main product details, price, line subtotal and full total. The checkout page consists of a submittable form with Stripe integration.
 
+There is also a profile page where registered customers can view their order history. Additional functionality is provided where registered users can see a wishlist of wines they would like to purchase, and leave reviews for wines they have already bought and tasted.
 
+Pages extend the base template for consistency.
 
+### Design
+
+##### Colour Scheme
+
+Over a white background Gold #e3c69f is the main accent colour, supported by a Maroon #741515 . Colours from Bootstrap classes are also used for user confirmations and notifications.
+
+##### Typography
+
+For clarity the main font used is Montserrat.
+
+##### Imagery
+
+The Oenotrus logo is deployed in the header of all pages for consistency and brand visibility and is responsive for different screensizes.
+
+##### Wireframes
+
+###### Homepage/Landing Page
+
+![alt text](static/oenotrus-landing-page.png)
+
+###### Products Page
+
+![alt text](static/oenotrus-products-page.png)
+
+###### Products Detail Page
+
+![alt text](static/oenotrus-product-details-page.png)
+
+###### User Profile Page
+
+![alt text](static/oenotrus-user-profile-page.png)
+
+###### Shopping Cart Page
+
+![alt text](static/oenotrus-cart-page.png)
+
+###### Checkout Page
+
+![alt text](static/oenotrus-checkout-page.png)
+
+### Limitations
+
+Stripe currently the only linked API
+
+### Features
+
+- Responsive main navigation bar
+- Filter product functions and search bar
+- Dropdown for new and registered users
+- Register and login functions
+- Linked database
+- Full add to cart and checkout functionality
+- Wishlist and review functionality
+- User confirmations
+- Further information pages
+
+### Technologies
+
+- **HTML** This project uses HTML as the main language used to complete the structure of the website.
+- **CSS** This project uses custom written CSS to style the Website.
+- **JavaScript/JQuery** This project uses custom written JavaScript to add interactive elements to the website and allow the user to achieve their goals.
+- **Bootstrap** The Bootstrap framework is used throughout this website for layouts and styling. This has also been used to import JavaScript/JQuery where necessary.
+- **Python** This project uses Python to communicate with the database allowing the recording and manipulation of user data.
+- **Django**
+- **ElephantSQL** - Postgres Database created with MongoDB
+- **Font Awesome** Font awesome Icons are used in the Body of the site and for the Social media links contained in the Footer section of the website.
+- **Google Fonts** Google fonts are used throughout the project to import the fonts.
+- **Gitpod** The IDE used throughout development
+- **GitHub** GithHub is the hosting site used to store the source code for the Website.
+- **Heroku** Deploys the live version of the application.
+- **Google Chrome Developer Tools** Google Chrome's built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+- **Balsamiq Wireframes** This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
+- **place-hold.it** Place-hold.it was used to display the colours shown in the Color Scheme section. 
+- **Lucid Chart** Chart was used to create the diagrams for Use Case scenarios, UX Design Principles, and Project Lifecycle planning.
+
+### Development Lifecycle
+
+![alt text](static/oenotrus-development-lifecycle.png)
+
+#### Iteration 1
+- Inception: the shopping user is considering to purchase wines online. The business user is a wine shop owner looking for a new sales channel.
+- Task: the developer/programmer creates a base template from which to extend the relevant framework demonstrating the layour and functionality of the site.
+- Increment: the developer creates a HTML framework within Django, setting up Allauth framewrork and a home app along with responsive nav bar header.
+
+#### Iteration 2
+- Inception: the shopping user would like to browse available wines, search for something specific, or peruse based on category. The business user has provided a set of products potentially meeting this demand.
+- Task: to meet this need the developer/programmer creates a framework to show these products and their appeal, as well as begin the ordering flow.
+- Increment: the developer/programmer creates the product app to show the full list and detail of available wines, along with search and filter functions and an add to cart app.
+
+#### Iteration 3
+- Inception: the shopping user would like to complete their purchase of selected wines.
+- Task: to meet this need the developer/programmer creates the checkout function along with stripe integration, and the user profile to store delivery information and order history
+- Increment: cart and checkout apps created with verification and user confirmation, then the propfile app. Product admin functionality created for the business user.
+
+#### Iteration 4
+- Inception: the shopping user has completed their purchase and would like to continue viewing the site, adding their thoughts and plans for future orders.
+- Task: to meet this need the developmer/programmer creates further functionality for user feedback and ongoing usage.
+- Increment: wishlist and review functionality created. Heroku deployment prepared. Testing and bug fixes finalised. Heroku final deployment.
+
+#### Initial Data Model
 
 ### Further Development
 
