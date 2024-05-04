@@ -8,8 +8,8 @@ from django_countries.fields import CountryField
 
 class UserProfile(models.Model):
     """
-    A user profile model for storing default
-    delivery information and order records
+    A user profile model including pre-filled
+    delivery information and user order history 
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
