@@ -116,3 +116,55 @@ def delete_wine(request, product_id):
     product.delete()
     messages.success(request, 'wine deleted!')
     return redirect(reverse('wines'))
+
+def submit_review(request, product_id):
+    """
+    View for submitting or updating product review.
+    Checks if user has already submitted review for the product.
+    If review exists, it updates existing review. If no review
+    exists, it creates new review.
+    Checks if user submitted rating. If rating submitted, it
+    updates review or creates new review. If no rating is submitted,
+    it displays an error message.
+    """
+
+    if not request.user.is_authenticated:
+        return redirect(reverse('account_login'))
+
+    user = request.user
+    product = get_object_or_404(Product, pk=product_id)
+    review = Reviews.objects.filter(created_by=user, product=product).first()
+
+    if request.method == 'POST':
+        rating = request.POST.get('rating')
+        comment = request.POST.get('review', '')
+
+        if rating is None:
+            messages.error(
+                request,
+                'Please provide star rating before submitting your review.'
+            )
+            return redirect(reverse('product_detail', args=[product_id]))
+
+        if review:
+            review.rating = rating
+            review.comment = comment
+            review.save()
+            messages.success(request, 'Your review has been updated.')
+
+        else:
+            Reviews.objects.create(
+                product=product,
+                comment=comment,
+                rating=rating,
+                created_by=user
+            )
+            messages.success(request, 'Thank you for your review!')
+
+        return redirect(reverse('wine_detail', args=[product_id]))
+
+    template = 'products/wine_detail.html'
+    context = {
+        'product': product,
+    }
+    return render(request, template, context)

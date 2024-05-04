@@ -13,8 +13,20 @@
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                    <div class="image-container my-5">
+                        {% if wine.image %}
+                            <a href="{{ wine.image.url }}" target="_blank">
+                                <img class="card-img-top img-fluid" src="{{ wine.image.url }}" alt="{{ wine.name }}">
+                            </a>
+                            {% else %}
+                            <a href="">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}stock-wine-bottle-empty.png" alt="{{ wine.name }}">
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0"><strong><i>{{ wine.vintage }} {{ wine.name }}, {{ wine.size }}</i></strong></p>
@@ -69,6 +81,57 @@
                                     </div>
                                 </div>
                             </div>
+                             <!-- Reviews -->
+    <section aria-labelledby="reviews">
+        <div class="row ml-2">
+            <div class="col-12 col-lg-7">
+                <h2 id="reviews" class="font-weight-bold product-page">Customer Reviews</h2>
+                <form method="POST" action="{% url 'submit_review' wine.id %}" class="form">
+                    {% csrf_token %}
+                    <div>                    
+                        <p>Help others by sharing your feedback</p>                    
+                        <!-- stars -->
+                        <div class="rate">
+                            <input type="radio" name="rating" class="rating" id="rating5" value="5"><label for="rating5" title="5"></label>
+                            <input type="radio" name="rating" class="rating" id="rating4" value="4"><label for="rating4" title="4"></label>
+                            <input type="radio" name="rating" class="rating" id="rating3" value="3"><label for="rating3" title="3"></label>
+                            <input type="radio" name="rating" class="rating" id="rating2" value="2"><label for="rating2" title="2"></label>
+                            <input type="radio" name="rating" class="rating" id="rating1" value="1"><label for="rating1" title="1"></label>
+                        </div>
+                        <br>
+                        Comments:
+                            <textarea name="review" rows="4" class="form-control"></textarea>
+                        
+                        {% if user.is_authenticated %}                    
+                            <a class="btn btn-outline-secondary rounded-pill mt-3" href="" role="button">Cancel</a>
+                            <input type="submit" value="Post your review" class="btn basket-btn rounded-pill float-right mt-3">                        
+                        {% else %}
+                            <p class="font-italic text-muted small pt-2">Please log in to leave a review. <span><a href="{% url 'account_login' %}">Login</a> now.</span></p>                    
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+           
+        <!-- display comments -->
+        <div class="row mt-4 ml-2">
+            {% for review in product.reviews.all %}
+            <div class="col-12 col-lg-7">
+                <strong>Ratings:</strong> {{ review.rating }}/5
+                <article>
+                    <h3 class="d-none">Review</h3>
+                    <p class="pt-2">{{ review.comment }}</p>
+                    <footer>        
+                        <p class="small text-muted">Posted by: {{ review.created_by }} <span class="pl-2">{{ review.created_on|date:"d M, Y" }}</span></p>
+                    </footer>         
+                </article>
+                <hr>
+            </div>
+            {% endfor %}
+        </div>   
+        </section>
+    </div>
+    
 
                             <div class="col-12">
                                 <a href="{% url 'wines' %}" class="btn btn-outline-black rounded-0 mt-5">
