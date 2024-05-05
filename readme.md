@@ -183,7 +183,11 @@ All testing conducted on live deployed pages.
 - Subtotal not correctly showing in cart page initially, solved by adding a missing trailing slash in JS
 - Initially the background image shown on the homepage would show on all other pages. Solved by using blan overlays with CSS class.
 - A horizontal line positioning bug on the all product page was identified and solved through css - margin auto and important tag.
--
+
+
+#### Manual Testing
+
+![alt text](oenotrus-manual-testing.png)
 
 ### Further Development
 

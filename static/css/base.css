@@ -347,9 +347,15 @@ input:checked ~ label {
       .header-container {
           padding-top: 116px;
       }
-  
+      
+      #hero-container {
+        max-height: 50% ;
+        overflow: hidden;
+      }
+
       body {
           height: calc(100vh - 116px);
+          background-size: contain;
       }
   
       .display-4.logo-font.text-black {
@@ -388,3 +394,4 @@ input:checked ~ label {
           padding: .25rem .5rem !important;
       }
   }
+
