@@ -165,8 +165,30 @@ Stripe currently the only linked API
 
 #### Initial Data Model
 
+![alt text](static/oenotrus-initial-data-model.png)
+
+### Testing
+
+#### Strategy
+
+The project depends upon the ability to store and manipulate information provided by each user. Testing is therefore firstly designed to ensure that all input elements function correctly, are validated, and stored in a usable format. These inputs need to be contained in a framework meeting responsivity and accessibility guidelines, so procedures to ensure this will also be implemented. Users will need to see all of their information in one place so testing procedures to ensure all actions are confirmed and then displayed on the profile page will also be devised.
+
+All elements should remain on the screen at sizes above 300px. All internal nav links should direct to the correct pages. All external links should open in a new window. All form inputs should be validated on submission. Form results should vary depending on user submitted information.
+
+All testing conducted on live deployed pages.
+
+#### Initial Bugs (pre-deployment)
+
+- On product detail pages the increase item quantity button would only increase the quantity in the cart but not in the box on the product page. Solved with function handleEnableDisable.
+- Subtotal not correctly showing in cart page initially, solved by adding a missing trailing slash in JS
+- Initially the background image shown on the homepage would show on all other pages. Solved by using blan overlays with CSS class.
+- A horizontal line positioning bug on the all product page was identified and solved through css - margin auto and important tag.
+-
+
 ### Further Development
 
 - Subscribe to new products
 - Repeat order function
-- Forgot password feature.
+- Forgot password feature
+- Shipping information
+- Special offers and new arrivals

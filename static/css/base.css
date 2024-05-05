@@ -130,6 +130,37 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* --------------------wine reviews */
+
+/* hide radio buttons */
+.rate {
+    display: inline-block;
+    border: 0;
+}
+
+.rate > input {
+    display: none;
+}
+
+.rate > label {
+    float: right;
+}
+
+/* show stars */
+.rate > label::before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    content: "\f005";
+    font-size: 1.1rem;   
+    cursor: pointer;
+}
+
+/* hover and click */
+label:hover ~ label,
+input:checked ~ label {
+    color: #ffb503;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 
