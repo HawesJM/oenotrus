@@ -211,7 +211,7 @@ https://github.com/HawesJM/oenotrus/tree/main/static/videos
 
 ##### WAVE Accessibility Checking
 
-![alt text](static/oenotrus-pep8-compliance.png)
+![alt text](static/oenotrus-wave-accessibility-confirmed.png)
 
 ##### JSHint Checking
 

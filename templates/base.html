@@ -57,10 +57,12 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <form method="GET" action="{% url 'wines' %}">
                   <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="search our fine wines">
+                    <label for="search-bar" class="sr-only">Search</label>
+                      <input class="form-control border border-black rounded-0" type="text" name="q" id="search-bar" placeholder="search our fine wines">
                       <div class="input-group-append">
                           <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                               <span class="icon">
+                                <a class="sr-only">Search</a>
                                   <i class="fas fa-search"></i>
                               </span>
                           </button>
@@ -68,6 +70,7 @@
                   </div>
               </form>
           </div>
+          <!-- User Options In Main Navigation -->
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                   <li class="list-inline-item dropdown">
@@ -161,31 +164,41 @@
         <hr class="my-5" />
         <section class="mb-5">
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 footer-text">
               <p>
+                <strong>
+                  <em>
                 Inspired by the legend of Oenotrus, an ancient Greek who emigrated to southern Italy and gave his name to the region that became known as "Oenotria", or "The Land Of Wine"
+              </em>
+              </strong>
               </p>
             </div>
           </div>
         </section>
         <section class="text-center mb-5">
-          <a href="" class="text-white me-4">
+          <a href="https://www.facebook.com/" class="text-white me-4 footer-links">
             <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook Link</span>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="https://twitter.com/" class="text-white me-4 footer-links">
             <i class="fab fa-twitter"></i>
+            <span class="sr-only">Twitter Link</span>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="https://www.google.com/" class="text-white me-4 footer-links">
             <i class="fab fa-google"></i>
+            <span class="sr-only">Google Link</span>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="https://www.instagram.com/" class="text-white me-4 footer-links">
             <i class="fab fa-instagram"></i>
+            <span class="sr-only">Instagram Link</span>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="https://www.linkedin.com/" class="text-white me-4 footer-links">
             <i class="fab fa-linkedin"></i>
+            <span class="sr-only">Linkedin Link</span>
           </a>
-          <a href="" class="text-white me-4">
+          <a href="https://github.com/" class="text-white me-4 footer-links">
             <i class="fab fa-github"></i>
+            <span class="sr-only">Github Link</span>
           </a>
         </section>
       </div>

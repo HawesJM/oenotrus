@@ -130,6 +130,14 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.footer-text {
+    color: #112A46;
+}
+
+.footer-links  {
+    text-decoration: none;
+}
+
 /* --------------------wine reviews */
 
 /* hide radio buttons */
