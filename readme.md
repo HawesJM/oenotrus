@@ -187,7 +187,11 @@ All testing conducted on live deployed pages.
 
 #### Manual Testing
 
-![alt text](oenotrus-manual-testing.png)
+![alt text](static/oenotrus-manual-testing.png)
+
+#### Testing Videos
+
+https://github.com/HawesJM/oenotrus/tree/main/static/videos
 
 ### Further Development
 

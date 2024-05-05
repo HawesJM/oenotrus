@@ -1,7 +1,5 @@
 {% load static %}
 
-<link rel="shortcut icon" type="image/ico" href="static/favicon.ico" >
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,6 +41,8 @@
     {% block extra_js %}
     {% endblock %}
 
+    <link rel="shortcut icon" type="image/ico" href="static/favicon.ico" >
+
     <title>Oenotrus Online Store {% block extra_title %}{% endblock %}</title>
   </head>
   <body class="homepage-body">
@@ -51,7 +51,7 @@
       <div id="topnav" class="row bg-white d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                  <img src="{% static 'oenotrus-logo-small.png' %}">
+                  <img src="{% static 'oenotrus-logo-small.png' %}" alt="oenotrus logo">
               </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
