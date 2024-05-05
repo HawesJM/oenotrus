@@ -136,7 +136,6 @@ Stripe currently the only linked API
 - **Heroku** Deploys the live version of the application.
 - **Google Chrome Developer Tools** Google Chrome's built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
 - **Balsamiq Wireframes** This was used to create wireframes for 'The Skeleton Plane' stage of UX design.
-- **place-hold.it** Place-hold.it was used to display the colours shown in the Color Scheme section. 
 - **Lucid Chart** Chart was used to create the diagrams for Use Case scenarios, UX Design Principles, and Project Lifecycle planning.
 
 ### Development Lifecycle
@@ -192,6 +191,90 @@ All testing conducted on live deployed pages.
 #### Testing Videos
 
 https://github.com/HawesJM/oenotrus/tree/main/static/videos
+
+##### Nu Html Checker
+
+![alt text](static/index-page-html-checked.png)
+![alt text](static/all-wines-page-html-checked.png)
+![alt text](static/wine-detail-html-checked.png)
+![alt text](static/cart-page-html-checked.png)
+![alt text](static/checkout-page-html-checked.png)
+![alt text](static/product-management-html-checked.png)
+
+##### W3C CSS Validation
+
+![alt text](static/oenotrus-css-validation.png)
+
+##### Lighthouse Checking
+
+![alt text](static/oenotrus-lighthouse-checking.png)
+
+##### WAVE Accessibility Checking
+
+![alt text](static/oenotrus-pep8-compliance.png)
+
+##### JSHint Checking
+
+![alt text](static/oenotrus-jshint-no-errors.png)
+
+##### PEP8 Compliance Checking
+
+![alt text](static/oenotrus-pep8-compliance.png)
+
+### Deployment
+
+##### Local Deployment
+
+- navigate to the Oenotrus repository - https://github.com/HawesJM/oenotrus.git 
+- click on the "Code" button, located just above the file list
+-in the dropdown menu, click on the clipboard icon to copy the repository's URL
+- open the terminal in your code editor and navigate to the directory where you want to clone the repository
+- run the following command:
+- git clone https://github.com/HawesJM/oenotrus.git
+- install packages from the requirements.txt file using this command: pip3 install -r requirements.txt
+- create a .env file for your own credentials
+- to launch the Django app, run command: python3 manage.py runserver
+- to stop the app: CTRL+C
+- make migrations to set up the database:
+python3 manage.py makemigrations
+python3 manage.py migrate
+-create superuser to access the Django Admin Panel:
+python3 manage.py createsuperuser
+
+##### Elephant SQL Database
+
+- go to the ElephantSQL website
+- sign-up with your GitHub account
+- click Create new instance
+- enter a name and choose plan 
+- select the region and data center closest to you
+- once created, click on the new database name to view the database URL
+- use the database URL as a credential in your .env file
+
+##### AWS
+
+ - login or create an account
+ - set up S3 Bucket
+ - set up IAM User Group and User
+ - connect Django to the bucket
+
+##### Heroku Deployment
+
+- login or create a new Heroku account
+- selected to create a new app
+- choose name and region
+- set relevant config vars
+- ensure procfile is added and sensitive information is hidden
+- deploy from main branch
+
+### Usage
+
+The live deployed app is publicly available at https://oenotrus-b46392d15346.herokuapp.com/ for users to access freely and navigate accordingly. Free registration is necessary to browse the full site and access full functionality.
+
+### Acknowledgments
+
+I'd like to thank my Code Institute assigned mentor Daisy McGirr for her support and input.
+
 
 ### Further Development
 

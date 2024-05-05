@@ -5,6 +5,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Reviews
 from .forms import WineForm
 
+
 def all_wines(request):
     """A view to show all wines and allow sorting and searching """
 
@@ -16,7 +17,7 @@ def all_wines(request):
 
     if request.GET:
         if 'sort' in request.GET:
-            sortkey = request.GET ['sort']
+            sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
@@ -38,10 +39,10 @@ def all_wines(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You did not enter any search criteria")
+                messages.error(request, "no search stipulated")
                 return redirect(reverse('wines'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             wines = wines.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -54,6 +55,7 @@ def all_wines(request):
     }
 
     return render(request, 'products/wines.html', context)
+
 
 def wine_detail(request, product_id):
     """A view to show product details """
@@ -76,16 +78,17 @@ def add_wine(request):
             messages.success(request, 'Successfully added wine!')
             return redirect(reverse('add_wine'))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add wine. Ensure the form is valid.')
     else:
         form = WineForm()
-        
     template = 'products/add_wine.html'
     context = {
         'form': form,
     }
 
     return render(request, template, context)
+
 
 def edit_wine(request, product_id):
     """ Edit a wine in the store """
@@ -97,7 +100,8 @@ def edit_wine(request, product_id):
             messages.success(request, 'wine successfully updated!')
             return redirect(reverse('wine_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update wine. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update wine. Ensure the form is valid.')
     else:
         form = WineForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -110,12 +114,14 @@ def edit_wine(request, product_id):
 
     return render(request, template, context)
 
+
 def delete_wine(request, product_id):
     """ Delete a product from the store """
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'wine deleted!')
     return redirect(reverse('wines'))
+
 
 def submit_review(request, product_id):
     """
@@ -167,4 +173,3 @@ def submit_review(request, product_id):
     context = {
         'product': product,
     }
-    return render(request, template, context)
