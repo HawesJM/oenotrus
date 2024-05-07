@@ -5,46 +5,16 @@
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
-        </div>
+        </div
     </div>
 {% endblock %}
 
 {% block content %}
-    <div class="row vh-100">
-        <div class="overlay col d-flex flex-column justify-content-center align-items-center">            
+    <div class="overlay"></div>
+        <div class="col d-flex flex-column justify-content-center align-items-center">            
             <h1 class="">OOPS!</h1>
             <h2 class="">404 - Page Not Found</h2> 
             <a href="{% url 'home' %}" class="btn btn-secondary">Go to homepage</a>            
         </div>        
-    </div>
-{% endblock %}
-
-{% extends "base.html" %}
-{% load static %}
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
-{% block content %}
-    <div id="hero-container" class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-5 pt-5">
-                <div id="info-cta">
-                <h1 class="display-4 logo-font text-black">
-                    Fine wines direct to your door
-                </h1>
-                    <div class="my-1">
-                        <h4>
-                            <a href="{% url 'wines' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3" id="shop-now-text"> Shop Now</a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 {% endblock %}
