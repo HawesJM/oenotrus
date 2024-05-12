@@ -25,6 +25,29 @@ body {
     color: #fafafa;
 }
 
+#main-dropdown a:hover {
+    background-color:rgb(116, 21, 21);
+    color: #fafafa;
+}
+
+#main-categories-dropdown a:hover {
+    background-color:rgb(116, 21, 21);
+    color: #fafafa;
+}
+
+.icon:hover {
+    color: #fafafa;
+}
+
+#account-dropdown a:hover {
+    background-color:rgb(116, 21, 21);
+    color: #fafafa;
+}
+
+#cart-icon {
+    color: rgb(116, 21, 21)!important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -77,12 +100,17 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(116, 21, 21);;
-    color: white;
+    background: rgb(116, 21, 21);
+    color: white !important;
 }
 
 .text-black {
     color: #000 !important;
+    text-decoration: none !important;
+}
+
+.fa-heart {
+    color:rgb(116, 21, 21)!important;
 }
 
 .banner-border {

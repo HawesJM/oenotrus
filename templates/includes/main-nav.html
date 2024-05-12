@@ -10,7 +10,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Wines
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div id="main-dropdown" class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'wines' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'wines' %}?sort=region&direction=asc" class="dropdown-item ">By Region</a>
                 <a href="{% url 'wines' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
@@ -22,7 +22,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wine-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Categories  
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="wine-link">
+            <div id="main-categories-dropdown" class="dropdown-menu border-0" aria-labelledby="wine-link">
                 <a href="{% url 'wines' %}?category=red_wine" class="dropdown-item">Red Wines</a>
                 <a href="{% url 'wines' %}?category=white_wine" class="dropdown-item">White Wines</a>
                 <a href="{% url 'wines' %}?category=champagne_sparkling" class="dropdown-item">Sparkling & Champagne</a>
