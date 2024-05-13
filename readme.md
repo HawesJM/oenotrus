@@ -31,7 +31,7 @@ The live website can be found here <https://oenotrus-b46392d15346.herokuapp.com/
 
 ##### Architecture
 
-Gym Logger is built with HTML5, custom CSS, JavaScript and Python in the Django full-stack framework to create a responsive and interactive full-stack web application which also contains back-end functionality that allows users to create, store and manipulate relevant data records.
+Oenotrus is built with HTML5, custom CSS, JavaScript and Python in the Django full-stack framework to create a responsive and interactive full-stack web application which also contains back-end functionality that allows users to create, store and manipulate relevant data records.
 
 ![alt text](static/oenotrus-mockup.png)
 
