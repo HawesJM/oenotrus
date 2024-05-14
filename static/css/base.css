@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-#shop-now-textL:hover {
+#shop-now-text:hover {
     color: #fafafa;
 }
 
@@ -164,6 +164,12 @@ input[name='q']::placeholder {
 
 .footer-links  {
     text-decoration: none;
+    color: #112A46;
+}
+
+.footer-links:hover {
+    color: #02142C;
+    font-size: 1.5em;
 }
 
 /* --------------------wine reviews */
