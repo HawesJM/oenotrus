@@ -172,6 +172,16 @@ input[name='q']::placeholder {
     font-size: 1.5em !important;
 }
 
+#facebook-link, #twitter-link, #github-link, #linkedin-link, #instagram-link {
+    text-decoration: none !important;
+    color: #112A46 !important;
+}
+
+#facebook-link, #twitter-link, #github-link, #linkedin-link, #instagram-link:hover {
+    color: #02142C !important;
+    font-size: 1.5em !important;
+}
+
 /* --------------------wine reviews */
 
 /* hide radio buttons */
