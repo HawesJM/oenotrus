@@ -179,7 +179,6 @@ input[name='q']::placeholder {
 
 #facebook-link, #twitter-link, #github-link, #linkedin-link, #instagram-link:hover {
     color: #02142C !important;
-    font-size: 1.5em !important;
 }
 
 /* --------------------wine reviews */
