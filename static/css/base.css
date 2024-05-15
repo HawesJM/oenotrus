@@ -159,17 +159,17 @@ input[name='q']::placeholder {
 }
 
 .footer-text {
-    color: #112A46;
+    color: #112A46 !important;
 }
 
 .footer-links  {
-    text-decoration: none;
-    color: #112A46;
+    text-decoration: none !important;
+    color: #112A46 !important;
 }
 
 .footer-links:hover {
-    color: #02142C;
-    font-size: 1.5em;
+    color: #02142C !important;
+    font-size: 1.5em !important;
 }
 
 /* --------------------wine reviews */
@@ -221,6 +221,7 @@ input:checked ~ label {
 .toast-capper {
     height: 2px;
 }
+
 
 .arrow-up {
     width: 0; 
